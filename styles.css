@@ -1,0 +1,59 @@
+html,
+body,
+section {
+    height: 100%;
+    background-blend-mode: color;
+    background-color: khaki;
+}
+
+body {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 15%;
+    text-align: center;
+    text-shadow: 0 2px 2px #b6701e;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.75rem 0;
+}
+
+.container {
+    display: flex;
+}
+
+.left-half {
+    background-color: grey;
+    flex: 1;
+    padding: 1rem;
+    height: 300%;
+}
+
+.right-half {
+    background-color: greenyellow;
+    flex: 1;
+    padding: 1rem;
+    height: 300%;
+}
+
+#block {
+    width: 95%;
+    height: 20%;
+    padding: 10px;
+    border: 5px solid #aaaaaa;
+}
+
+#block2 {
+    width: 95%;
+    height: 20%;
+    padding: 10px;
+    border: 5px solid #774545;
+}
