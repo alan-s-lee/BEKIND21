@@ -22,7 +22,7 @@ div {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 2.30rem;
     margin: 0 0 0.75rem 0;
 }
 
@@ -31,14 +31,14 @@ h1 {
 }
 
 .left-half {
-    background-color: grey;
+    background-color: greenyellow;
     flex: 1;
     padding: 1rem;
     height: 300%;
 }
 
 .right-half {
-    background-color: greenyellow;
+    /* background-color: blueviolet; */
     flex: 1;
     padding: 1rem;
     height: 300%;
