@@ -2,100 +2,138 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
 </head>
 
 <body>
+    <!-- 
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+            </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div> -->
 
     <h1>BE KIND 21</h1>
     <section class="container">
         <div class="left-half" id="left">
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse1">Your List!</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="right-half">
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag" draggable="true" ondragstart="drag(event)">Journal out a list of things you like about yourself.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag2" draggable="true" ondragstart="drag(event)">Sign petitions for causes you care about.</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag3" draggable="true" ondragstart="drag(event)">Go through your closet and pack a bag of gently used clothes to donate.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag4" draggable="true" ondragstart="drag(event)">Volunteer to staff at your local polling place at "powerthepolls.org".</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag5" draggable="true" ondragstart="drag(event)">Be intentional about resting and give yourself permission to slow down.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag6" draggable="true" ondragstart="drag(event)">Share a meal with someone at home or over a video call.</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag7" draggable="true" ondragstart="drag(event)">Send 10 kind notes to loved ones.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag8" draggable="true" ondragstart="drag(event)">Advocate for clean water locally and beyond at "wateradvocacy.org".</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag9" draggable="true" ondragstart="drag(event)">Call a loved one and remind them that you love them.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag10" draggable="true" ondragstart="drag(event)">Leave good reviews online for local small businesses you enjoy.</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag11" draggable="true" ondragstart="drag(event)">Thank you coworkers, teachers, or classmates for their hard work.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag12" draggable="true" ondragstart="drag(event)">Pick an area outside and clean up the litter (like the #TrashTag).</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag13" draggable="true" ondragstart="drag(event)">Volunteer at a community garden or food bank to support greater food access.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag14" draggable="true" ondragstart="drag(event)">Comment a compliment on at least 3 selfies.</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag15" draggable="true" ondragstart="drag(event)">Clean/reorganize your sleeping space for good sleep hygiene.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag16" draggable="true" ondragstart="drag(event)">Eat green! Eat more fresh, whole foods to reduce processing waste.</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag17" draggable="true" ondragstart="drag(event)">Go to "BeThere.org" for tips on how to check in and be there for your loved ones.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag18" draggable="true" ondragstart="drag(event)">Practice mental and digital self-care by cleaning up the files on your device.</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag19" draggable="true" ondragstart="drag(event)">Share an artist's work online and invite people to support their art.</p>
-            </div>
-            <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag20" draggable="true" ondragstart="drag(event)">Register yourself and a friend to vote at "rockthevote.org".</p>
-            </div>
-            <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <p id="drag21" draggable="true" ondragstart="drag(event)">Learn just how many people you can compliment. Watch the kindess spread!</p>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse2">Your Options!</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse in">
+
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag" draggable="true" ondragstart="drag(event)">Journal out a list of things you like about yourself.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag2" draggable="true" ondragstart="drag(event)">Sign petitions for causes you care about.</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag3" draggable="true" ondragstart="drag(event)">Go through your closet and pack a bag of gently used clothes to donate.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag4" draggable="true" ondragstart="drag(event)">Volunteer to staff at your local polling place at "powerthepolls.org".</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag5" draggable="true" ondragstart="drag(event)">Be intentional about resting and give yourself permission to slow down.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag6" draggable="true" ondragstart="drag(event)">Share a meal with someone at home or over a video call.</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag7" draggable="true" ondragstart="drag(event)">Send 10 kind notes to loved ones.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag8" draggable="true" ondragstart="drag(event)">Advocate for clean water locally and beyond at "wateradvocacy.org".</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag9" draggable="true" ondragstart="drag(event)">Call a loved one and remind them that you love them.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag10" draggable="true" ondragstart="drag(event)">Leave good reviews online for local small businesses you enjoy.</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag11" draggable="true" ondragstart="drag(event)">Thank you coworkers, teachers, or classmates for their hard work.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag12" draggable="true" ondragstart="drag(event)">Pick an area outside and clean up the litter (like the #TrashTag).</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag13" draggable="true" ondragstart="drag(event)">Volunteer at a community garden or food bank to support greater food access.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag14" draggable="true" ondragstart="drag(event)">Comment a compliment on at least 3 selfies.</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag15" draggable="true" ondragstart="drag(event)">Clean/reorganize your sleeping space for good sleep hygiene.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag16" draggable="true" ondragstart="drag(event)">Eat green! Eat more fresh, whole foods to reduce processing waste.</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag17" draggable="true" ondragstart="drag(event)">Go to "BeThere.org" for tips on how to check in and be there for your loved ones.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag18" draggable="true" ondragstart="drag(event)">Practice mental and digital self-care by cleaning up the files on your device.</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag19" draggable="true" ondragstart="drag(event)">Share an artist's work online and invite people to support their art.</p>
+                        </div>
+                        <div id="block" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag20" draggable="true" ondragstart="drag(event)">Register yourself and a friend to vote at "rockthevote.org".</p>
+                        </div>
+                        <div id="block2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p id="drag21" draggable="true" ondragstart="drag(event)">Learn just how many people you can compliment. Watch the kindess spread!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
